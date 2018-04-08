@@ -6,7 +6,7 @@ import time
 import re
 import multiprocessing
 from bs4 import BeautifulSoup
-import  requests
+import requests
 from xlrd import open_workbook
 from xlutils.copy import copy
 print "程序开始执行 by cl monkey13180"
@@ -17,7 +17,7 @@ try:
     end = config[1]
     url = config[2]
 except Exception as e:
-    print(\"请在当前目录下创建config.txt, 请按顺序填写页码,fid,域名并敲回车!\")
+    print("请在当前目录下创建config.txt, 请按顺序填写页码,fid,域名并敲回车!")
 
 class Pool_91(object):
     def __init__(self,range,res):
@@ -51,18 +51,18 @@ class Pool_91(object):
     def mycallback(self,x):
 
 
-        rexcel = open_workbook(\"list.xls\")
+        rexcel = open_workbook("list.xls")
         rows = rexcel.sheets()[0].nrows
         excel = copy(rexcel)
         table = excel.get_sheet(0)
         #
         row = rows
         for value in x:
-            table.write(row, 0, time.strftime(\"%Y-%m-%d %H:%M:%S\"))
+            table.write(row, 0, time.strftime("%Y-%m-%d %H:%M:%S"))
             table.write(row, 1, value[1])
             table.write(row, 2, value[0])
             row += 1
-        excel.save(\"list.xls\")
+        excel.save("list.xls")
 
 
 
