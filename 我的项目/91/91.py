@@ -9,7 +9,9 @@ from bs4 import BeautifulSoup
 import requests
 from xlrd import open_workbook
 from xlutils.copy import copy
-print "程序开始执行 by cl monkey13180"
+
+
+print "程序开始执行"
 try:
     f = open('config.txt', 'r')
     config = str(f.read()).split('\n')
