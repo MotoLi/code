@@ -7,8 +7,9 @@
       <sourceFolder url="file://$MODULE_DIR$/python学习/benbanfa/02/projects/gothonweb" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/我的项目/91porn" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/我的项目/porndl-91tool" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/我的项目/taobaoSpider" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 2.7.13 (~/anaconda/bin/python)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 2.7 (1)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
